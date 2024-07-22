@@ -1,0 +1,148 @@
+/* common */
+body {
+  /* font-family: 'Hiragino Kaku Gothic ProN', sans-serif; */
+  color: #383E45;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.subtitle {
+  width: 106px;
+  margin: 0 auto;
+  border-bottom: solid #383E45 1px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+img {
+  object-fit: cover;
+}
+
+p {
+  font-size: 14.4px;
+  line-height: 1.5;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 16px;
+}
+
+.header > h1 a {
+  display: block;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  color: #24292E;
+}
+
+.nav a:hover {
+  opacity: .7;
+}
+
+/* main */
+
+.main__img img {
+  width: 100%;
+}
+
+/* about */
+.about .subtitle {
+  margin-top: 80px;
+}
+
+.about-body {
+  display: flex;
+  gap: 30px;
+  max-width: 540px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.about-body h3 {
+  margin-bottom: 10px;
+}
+
+/* ---------------
+  bicycle
+--------------- */
+
+.bicycle .subtitle {
+  margin-top: 100px;
+}
+
+.bicycle__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.bicycle__list h3 {
+  margin: 10px 0;
+}
+
+.bicycle__list img {
+  width: 100%;
+  height: auto;
+}
+
+/* -------------
+    footer
+------------- */
+
+.footer {
+  margin-top: 100px;
+  padding: 10px 4%;
+  text-align: center;
+}
+
+/* ---------
+ sp用
+--------- */
+@media (max-width: 600px) {
+  /* --------
+    about
+  -------- */
+  .about-body {
+    display: block;
+    margin-top: 60px;
+    max-width: none;
+    text-align: center;
+  }
+
+  .about-body h3, .about-text  {
+    text-align: left;
+  }
+
+  .about-body h3 {
+    margin: 10px 0;
+  }
+
+  /* -------
+    bicycle
+  ------- */
+  .bicycle__list {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
